@@ -7,6 +7,7 @@ if [ -z "$1" ] || [ -z "$2" ]; then
     echo "First parameter is dir relative to src"
     echo "Second parameter is the file that want to be compiled"
     echo "Example: ./run.sh Pointers main"
+    echo "Read README.md for details"
     exit 1
 fi
 
