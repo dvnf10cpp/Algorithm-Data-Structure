@@ -9,6 +9,6 @@
 
 ## Scripts
 1. run.sh : to instant compile cpp or c file and put in out dir. Takes 2 parameters, first is the dir inside src and second is the file that has cpp or c extension inside the dir.  
-How to use : just run ```chmod +x ./run.sh``` first. make sure your terminal is bash
+How to use : just run ```chmod +x ./run.sh``` first. make sure your terminal is bash  
 Example    : ```./run.sh Pointers main``` in cli
 
