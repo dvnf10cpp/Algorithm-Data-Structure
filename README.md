@@ -1,4 +1,4 @@
-## Learning Algorithm and Data Structure
+# Learning Algorithm and Data Structure
 Repo for learning Algorithm and Data Structure.  
 
 ## Resources

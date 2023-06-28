@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z $1 ]; then
+if [ -z "$1" ]; then
     echo "Please put message as parameter"
     exit 1
 fi
