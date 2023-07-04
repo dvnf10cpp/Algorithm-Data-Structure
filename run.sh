@@ -19,7 +19,7 @@ file_cpp="./src/$1/$2.cpp"
 mkdir -p ./out
 mkdir -p "$dir"
 
-if [ ! -f "$file_exe" ] || ([ ! -f "$file_c" ] && [ ! -f "$file_cpp" ]); then
+if ([ ! -f "$file_c" ] && [ ! -f "$file_cpp" ]); then
     echo "$file_c or $file_cpp doesnt exist"
     exit 1;
 fi
