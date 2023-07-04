@@ -11,10 +11,10 @@ if [ -z "$1" ] || [ -z "$2" ]; then
     exit 1
 fi
 
-dir="./out/$1"
+dir="./out/Algorithm/$1"
 file_exe="$dir/$2"
-file_c="./src/$1/$2.c"
-file_cpp="./src/$1/$2.cpp"
+file_c="./src/Algorithm/$1/$2.c"
+file_cpp="./src/Algorithm/$1/$2.cpp"
 
 mkdir -p ./out
 mkdir -p "$dir"
