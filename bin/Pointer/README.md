@@ -14,18 +14,18 @@ struct* -> stuct
 ```
 
 ## Contents
-[1. Introduction](./intro.c)
-[2. Arithemtic](./arithmetic.c)
-[3. Strong Type](./strong.c)
-[4. Generic Type](./generic.c)
-[5. Argument](./argument.c)
-[6. PointerToPointer](./topointer.c)
-[7. Size of func](./size.c)
-[8. Array as Pointer](./array.c)
-[9. Character Array](./string.c)
-[10. Dynamic Memory](./dynamic.c)
-[11. Memory Leak](./leak.c%2B%2B)
-
+[1. Introduction](./intro.c)   
+[2. Arithemtic](./arithmetic.c)   
+[3. Strong Type](./strong.c)    
+[4. Generic Type](./generic.c)    
+[5. Argument](./argument.c)    
+[6. PointerToPointer](./topointer.c)   
+[7. Size of func](./size.c)    
+[8. Array as Pointer](./array.c)   
+[9. Character Array](./string.c)    
+[10. Dynamic Memory](./dynamic.c)    
+[11. Memory Leak](./leak.c%2B%2B)   
+ 
 ## Keywords
 #### Dereferencing
 Untuk mengakses nilai dari pointer dengan menggunakan tanda bintang (*)
