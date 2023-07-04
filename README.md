@@ -2,11 +2,13 @@
 Repo for learning Algorithm and Data Structure.  
 
 ## Resources
-1. [Freecodecamp Data Structure](https://www.youtube.com/watch?v=B31LgI4Y4DQ) ```C/C++```
-2. [Freecodecamp Pointer](https://www.youtube.com/watch?v=zuegQmMdy8M) ```C/C++```
-3. [Freecodecamp Algorithm Data Structure](https://www.youtube.com/watch?v=8hly31xKli0) ```Concepts, Python```
-4. [Freecodecamp Data Structure](https://www.youtube.com/watch?v=RBSGKlAvoiM) ```Java```
-5. [Brocode Data Structure Algorithm](https://www.youtube.com/watch?v=CBYHwZcbD-s) ```Java```
+1. [Freecodecamp Data Structure](https://www.youtube.com/watch?v=B31LgI4Y4DQ) ```C/C++, English```
+2. [Freecodecamp Pointer](https://www.youtube.com/watch?v=zuegQmMdy8M) ```C/C++, English```
+3. [Freecodecamp Algorithm Data Structure](https://www.youtube.com/watch?v=8hly31xKli0) ```Concepts, Python, English```
+4. [Freecodecamp Data Structure](https://www.youtube.com/watch?v=RBSGKlAvoiM) ```Java, English```
+5. [Brocode Data Structure Algorithm](https://www.youtube.com/watch?v=CBYHwZcbD-s) ```Java, English```
+6. [Freecodecamp Data Structure and Algorithm](https://www.youtube.com/watch?v=pkYVOmU3MgA) ```Python, Englsih```
+7  [Fasilkom Kuliah Struktur Data dan Algoritma](https://www.youtube.com/playlist?list=PLix5cpndzAbQ6tnx-gls_uv1HAIZK3Got) ```Playlist, Java, Indonesia```
 
 ## Concepts
 
