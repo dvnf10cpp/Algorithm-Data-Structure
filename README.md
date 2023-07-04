@@ -8,7 +8,7 @@ Repo for learning Algorithm and Data Structure.
 4. [Freecodecamp Data Structure](https://www.youtube.com/watch?v=RBSGKlAvoiM) ```Java, English```
 5. [Brocode Data Structure Algorithm](https://www.youtube.com/watch?v=CBYHwZcbD-s) ```Java, English```
 6. [Freecodecamp Data Structure and Algorithm](https://www.youtube.com/watch?v=pkYVOmU3MgA) ```Python, Englsih```
-7  [Fasilkom Kuliah Struktur Data dan Algoritma](https://www.youtube.com/playlist?list=PLix5cpndzAbQ6tnx-gls_uv1HAIZK3Got) ```Playlist, Java, Indonesia```
+7. [Fasilkom Kuliah Struktur Data dan Algoritma](https://www.youtube.com/playlist?list=PLix5cpndzAbQ6tnx-gls_uv1HAIZK3Got) ```Playlist, Java, Indonesia```
 
 ## Concepts
 
