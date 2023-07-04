@@ -24,7 +24,7 @@ struct* -> stuct
 [8. Array as Pointer](./array.c)   
 [9. Character Array](./string.c)    
 [10. Dynamic Memory](./dynamic.c)    
-[11. Memory Leak](./leak.c%2B%2B)   
+[11. Memory Leak](./leak.cpp)   
  
 ## Keywords
 #### Dereferencing
