@@ -43,7 +43,7 @@ class Folder : public FileSystem{
 };
 
 int main() {
-    cout << "\n\n\n\n\n\n\n";
+    cout << "\n";
     Folder* root    = new Folder("root");
 
     vector<string> names = {"Documents", "Desktop", "Pictures", "Downloads", "Music"};
