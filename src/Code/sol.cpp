@@ -2,17 +2,6 @@
 
 using namespace std;
 
-void verify(bool &f, int &j, int &b, int &k, int &mn) {
-    if(f) {
-        if((j+b>=k)&&(j<mn)) {
-            mn=j;
-            b=1;
-            j=0;
-        }
-        f=0;
-    }
-}
-
 int main() {
     char c; bool f;
     int t,n,k,j,mn,b;
@@ -23,13 +12,12 @@ int main() {
         for(int i=0;i<n;i++) {
             cin >> c;
             if(c=='W') {
-                j++; f=1; continue;
-            } 
-            b++;
-            verify(f,j,b,k,mn);
-            
+                j++; f=1; 
+            }  else {
+                if(b>=k) {mn=0;}
+                b++;
+            }
         }
-        verify(f,j,n,k,mn);
         cout << mn << endl;
     }
     return 0;
