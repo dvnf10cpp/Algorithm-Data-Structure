@@ -2,6 +2,7 @@
 
 # Competitive Programming instant exe. Only for C++
 
+
 in="./src/Code"
 out="./out/Code"
 file_cpp="$in/sol.cpp"
