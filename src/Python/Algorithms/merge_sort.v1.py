@@ -5,6 +5,8 @@ it returns new sorted array.
 1. Divide : Find the midpoint and divide into subarray
 2. Conquer : Recursively sort the sublist from the prev step
 3. Combine : Merge the sorted sublist created form the prev step
+Time Complexity : O(n log n)
+why? because the divide function runs in log n and merge and compare operation takes n time
 """
 
 def divide(array : list) -> list :
@@ -46,4 +48,5 @@ def merge_sort(array : list) -> list :
     return merge(left, right);
 
 array = [76,51,35,87,91,33,12,56,12,11,40,44,56];
-print(merge_sort(array))
+print('Before: ', array);
+print('After: ', merge_sort(array))
