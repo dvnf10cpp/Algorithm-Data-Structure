@@ -33,6 +33,7 @@ def merge(left : list, right : list) -> list :
     while (r < len(right)) : 
         new.append(right[r]);
         r += 1;
+    return new;
 
 def merge_sort(array : list) -> list :
     if (len(array) <= 1) :
@@ -43,3 +44,6 @@ def merge_sort(array : list) -> list :
     right = merge_sort(right_half);
 
     return merge(left, right);
+
+array = [76,51,35,87,91,33,12,56,12,11,40,44,56];
+print(merge_sort(array))
