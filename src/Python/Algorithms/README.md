@@ -51,4 +51,6 @@ Kontent PDF online dalam menganalisa kompleksitas algoritma : [TLX-Analisas Komp
 ### Contents
 [1. Linear Search](./linear_search.py)          
 [2. Binary Search](./binary_search.py)                    
-[2. Recursive Binary Search](./recursive_binary_search.py)            
+[3. Recursive Binary Search](./recursive_binary_search.py)            
+[4. Bubble Sort](./bubble_sort.py)                
+[5. Merge Sort](./merge_sort.py)               

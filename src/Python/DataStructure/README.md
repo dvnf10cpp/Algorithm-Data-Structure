@@ -12,4 +12,5 @@ yang cocok untuk digunakan, dari segi keefektifan dan keefesiensi (Big O).
 4. Menghapus value dari struktur data
 
 ### Contents
-[1. Array](./demo_array.py)
+[1. Array](./demo_array.py)    
+[2. Linked List](./linked_list.py)
