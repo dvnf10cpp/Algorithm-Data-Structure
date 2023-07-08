@@ -14,8 +14,9 @@ Repo for learning Algorithm and Data Structure.
 
 ## Concepts
 
-1. [Pointer](./src/Pointer/README.md) (required for C/C++ language)
-2. [Algorithm](./src/Python/Algorithms/README.md) (Python)
+1. [Pointer](./src/Pointer/README.md) (C/C++, Demo)   
+2. [Algorithm](./src/Python/Algorithms/README.md) (Python, Concepts)
+3. [Data Structure](./src/Python/DataStructure/README.md) (Python, Concepts)
 
 ## Scripts
 

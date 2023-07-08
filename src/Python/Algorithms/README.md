@@ -44,9 +44,11 @@ pertumbuhan ukuran input. Dalam notasi Big O, direpresentasikan sebagai ```O(n^2
 6. Exponential Time : Quadratic Time : Waktu yang dibutuhkan dalam melakukan suatu instruksi algoritma meningkat secara eksponensial dengan pertumbuhan ukuran input. Dalam notasi Big O, direpresentasikan sebagai ```O(2^n)``` atau ```O(3^n)```
 7. Polinomial Time : Waktu yang dibutuhkan dalam melakukan suatu instruksi algoritma meningkat secara polinomial dengan pertumbuhan ukuran input. Dalam notasi Big O, direpresentasikan sebagai ```O(n^k)```
 8. Factorial Time : Waktu yang dibutuhkan dalam melakukan suatu instruksi algoritma meningkat secara faktorial dengan pertumbuhan ukuran input. Dalam notasi Big O, direpresentasikan sebagai ```O(n!)```
+9. Quasalinear Time : Waktu yang dibutuhkan merupakan gabungan antara linear time dengan logarithmic. Dalam notasi Big O , direpresentasikan sebagai ```O n log n```
 
-Kontent PDF online dalam menganalisas kompleksitas algoritma : [TLX-Analisas Kompleksitas](https://raw.githubusercontent.com/ia-toki/training-gate-id-pdf/master/pemrograman-dasar-cpp_08-analisis-kompleksitas.pdf)
+Kontent PDF online dalam menganalisa kompleksitas algoritma : [TLX-Analisas Kompleksitas](https://raw.githubusercontent.com/ia-toki/training-gate-id-pdf/master/pemrograman-dasar-cpp_08-analisis-kompleksitas.pdf)
 
 ### Contents
-[1. Linear Search](./linear_search.py)
-[2. Binary Search](./binary_search.py)
+[1. Linear Search](./linear_search.py)          
+[2. Binary Search](./binary_search.py)                    
+[2. Recursive Binary Search](./recursive_binary_search.py)            
