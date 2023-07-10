@@ -31,4 +31,4 @@ elif [ -f "$file_cpp" ] || [ -f "$file_cplus" ]; then
     g++ "$file_cpp" -o "$file_exe"
 fi
 
-"$file_exe"
+"./$file_exe"
