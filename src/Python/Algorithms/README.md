@@ -49,8 +49,10 @@ pertumbuhan ukuran input. Dalam notasi Big O, direpresentasikan sebagai ```O(n^2
 Kontent PDF online dalam menganalisa kompleksitas algoritma : [TLX-Analisas Kompleksitas](https://raw.githubusercontent.com/ia-toki/training-gate-id-pdf/master/pemrograman-dasar-cpp_08-analisis-kompleksitas.pdf)
 
 ### Contents
-[1. Linear Search](./linear_search.py)          
-[2. Binary Search](./binary_search.py)                    
-[3. Recursive Binary Search](./recursive_binary_search.py)            
-[4. Bubble Sort](./bubble_sort.py)                
-[5. Merge Sort](./merge_sort.py)               
+1. [Linear Search](./linear_search.py)          
+2. [Binary Search](./binary_search.py)                    
+3. [Recursive Binary Search](./recursive_binary_search.py)            
+4. [Bubble Sort](./bubble_sort.py)                
+5. [Merge Sort](./merge_sort.py)       
+6. [Merge Sort Linked List](./merge_sort.sll.py)
+

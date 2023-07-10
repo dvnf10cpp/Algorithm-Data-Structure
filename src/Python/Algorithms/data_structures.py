@@ -28,7 +28,6 @@ class SLL :
         while (current != None) :
             count += 1;
             current = current.next;
-
         return count;
 
     def add_next(self, value : any) -> None : 
@@ -119,10 +118,8 @@ class SLL :
         return current;
 
     def get(self, index : int) -> Node : 
-        if (index < 0 or index > self.size) :
-            raise IndexError("Index out of range");
         current : Node = self.head;
-        while (current != None and index > 0) :
+        while (index > 0) :
             current = current.next;
             index -= 1;
         return current;
