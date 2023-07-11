@@ -26,6 +26,22 @@ struct* -> stuct
 [10. Dynamic Memory](./dynamic.c)    
 [11. Memory Leak](./leak.cpp)   
  
+## Fun Fact
+Java sebenarnya menggunakan pointer, hanya saja tidak secara explisit.   
+Pada setiap instansiasi object pada java :           
+```
+Object obj = new Object();
+```
+Sama dengan ini pada C++ :        
+```
+Object* obj = new Object();
+```
+Dan tidak sama dengan ini :        
+```
+Object obj = Object();
+```
+Bisa dikatakan, setiap variabel objek pada java sebanarnya merupakan pointer to object, bukan object beneran.     
+
 ## Keywords
 #### Dereferencing
 Untuk mengakses nilai dari pointer dengan menggunakan tanda bintang (*)

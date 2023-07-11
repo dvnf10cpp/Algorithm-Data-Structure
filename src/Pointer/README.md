@@ -26,7 +26,7 @@ struct* -> stuct
 [10. Dynamic Memory](./dynamic.c)    
 [11. Memory Leak](./leak.cpp)   
  
-## Fun fact
+## Fun Fact
 Java sebenarnya menggunakan pointer, hanya saja tidak secara explisit.   
 Pada setiap instansiasi object pada java :           
 ```
