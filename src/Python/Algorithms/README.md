@@ -1,4 +1,5 @@
 # Introduction to Algorithm
+### [Resource in Use](https://www.youtube.com/watch?v=8hly31xKli0)
 
 ### What is Algorithm ?
 Algoritma adalah langkah atau instruksi untuk menyelesaikan suatu masalah.      

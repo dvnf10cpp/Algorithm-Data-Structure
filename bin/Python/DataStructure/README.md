@@ -1,4 +1,5 @@
 ## Introduction to Data Structure
+### [Resource in Use](https://www.youtube.com/watch?v=8hly31xKli0)
 ### Definition
 Struktur data adalah satu cara kita menyimpan data dalam pemrograman.   
 Setiap struktur data menyelesaikan masalah yang spesifik.   

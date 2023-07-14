@@ -1,9 +1,8 @@
-#include <bits/stdc++.h>
+#ifndef STRUCTS
+#define STRUCTS
 
-using namespace std;
-/*
-Linked list is a data structure that stores a data and and a pointer/reference to the next data (Node)
-*/
+#include <bits/stdc++.h>
+// for storing all data structures into one file
 
 struct Node {
     Node* next; // 4 bytes size, its pointer
@@ -13,16 +12,6 @@ struct Node {
     Node(int data) : data(data), next(nullptr) {}
     Node(int data, Node* next) : data(data), next(next) {}
 };
-
-void printNode(Node* node){
-    //debug method
-    Node* curr = node;
-    while(curr != nullptr) {
-        printf("| %d | >> ", curr->data);
-        curr = curr->next;
-    }
-    printf("\n");
-}
 
 struct LinkedList {
     Node* head;
@@ -80,9 +69,7 @@ struct LinkedList {
         while(index-- > 1) {
             curr = curr->next;
         }
-        Node* temp = curr->next;
         curr->next = curr->next->next;
-        delete temp;
     }
 
     int get(int index) {
@@ -103,6 +90,20 @@ struct LinkedList {
         }
     }
 
+    void reverse() {
+        // Understand this concept
+        Node* newHead = nullptr;
+        Node* curr = head;
+        Node* next;
+        while(curr != nullptr) {
+            next = curr->next;
+            curr->next = newHead;
+            newHead = curr;
+            curr = next;
+        }
+        head = newHead;
+    }
+
     bool empty() {
         return head == nullptr;
     }
@@ -117,41 +118,6 @@ struct LinkedList {
         return temp;
     }
 
-    void reverseVisualize() {
-        Node* newHead = nullptr;
-        Node* curr = head;
-        Node* next;
-        printf("DEBUGGING...\n");// debug
-        while(curr != nullptr) {
-            printf("-------------------------------\n");
-            next = curr->next;
-            printf("next : "); // debug
-            printNode(next); // debug
-            curr->next = newHead; 
-            printf("curr : "); // curr
-            printNode(curr); // debug
-            newHead = curr;
-            printf("newhead : ");
-            printNode(newHead); // debug
-            curr = next;
-            printf("-------------------------------\n");
-        }
-        head = newHead;
-    }
-
-    void reverse() {
-        // Understand this concept
-        Node* newHead = nullptr;
-        Node* curr = head;
-        Node* next;
-        while(curr != nullptr) {
-            next = curr->next;
-            curr->next = newHead; 
-            newHead = curr;
-            curr = next;
-        }
-        head = newHead;
-    }
     void print() {
         if(head == nullptr) {
             printf("Empty!\n");
@@ -166,28 +132,5 @@ struct LinkedList {
     }
 };
 
-int main() {
-    LinkedList* ll = new LinkedList();
-    ll->add(5);
-    ll->add(1);
-    ll->prepend(2);
-    ll->insert(1,3);
-    ll->insert(3,4);
-    ll->print();
-    ll->remove(0);
-    ll->print();
-    ll->add(10);
-    ll->add(1);
-    printf("SEBELUM REVERSE : \n");
-    ll->print();
-    ll->reverseVisualize();
-    printf("SETELAH REVERSE : \n");
-    ll->print();
+#endif
 
-    delete ll;
-    return 0;
-}
-
-void demo() {
-    
-}
