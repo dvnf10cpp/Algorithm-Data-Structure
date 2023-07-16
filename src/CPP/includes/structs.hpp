@@ -4,6 +4,8 @@
 #include <bits/stdc++.h>
 // for storing all data structures into one file
 
+using std::string;
+
 struct Node {
     Node* next; // 4 bytes size, its pointer
     int data; // 4 bytes size
@@ -192,7 +194,7 @@ public:
         }
         return true;
     }
-};`
+};
 
 #endif
 
