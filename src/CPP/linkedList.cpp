@@ -118,6 +118,7 @@ struct LinkedList {
     }
 
     void reverseVisualize() {
+        // PAHAMI KONSEP INI
         Node* newHead = nullptr;
         Node* curr = head;
         Node* next;
@@ -152,6 +153,11 @@ struct LinkedList {
         }
         head = newHead;
     }
+
+    void reverseRecusive() {
+        
+    }
+
     void print() {
         if(head == nullptr) {
             printf("Empty!\n");
@@ -186,8 +192,4 @@ int main() {
 
     delete ll;
     return 0;
-}
-
-void demo() {
-    
 }
