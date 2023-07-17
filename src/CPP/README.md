@@ -25,5 +25,6 @@ Kita bisa mengimplementasikan arraylist buatan kita sendiri di C++ maupun Java.
 ### Contents 
 1. [ArrayList in CPP](./ArrayList.cpp)        
 2. [LinkedList](./LinkedList.cpp)          
-3. [Program for Demo Struktur Data](./Program.cpp)
+3. [Prefix Tree](./Trie.cpp)
+10. [Program for Demo Struktur Data](./Program.cpp)
 

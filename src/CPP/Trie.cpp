@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 // Prefix Tree
+// Penjelasan lebih lengkapnya ada di PPT
 using namespace std;
 
 class TrieNode {
@@ -24,8 +25,15 @@ public:
         root = new TrieNode();
     }
 
+    ~Trie() {
+        clear(root);
+    }
+
     void insert(TrieNode* node, string word){
-        if(word.size()==0) return;
+        if(word.empty()) {
+            node->end = true;
+            return;
+        }
         int index = word[0] % 97;
         if(node->child[index] == nullptr)
             node->child[index] = new TrieNode();
@@ -62,6 +70,50 @@ public:
             node = node->child[j];
         }
         return true;
+    }
+
+    void clear(TrieNode* node) {
+        for(int i = 0; i < 26; i++) {
+            if(node->child[i] != nullptr) {
+                clear(node->child[i]);
+            }
+        }
+        delete node;
+    }
+
+    void printSort(TrieNode* node, string res) {
+        if(node->end) {
+            cout << res << '\n';
+        }
+        for(int i = 0;i < 26; i++) {
+            if(node->child[i] != nullptr) {
+                printSort(node->child[i], res + char(i + 97));
+            }
+        }   
+    }
+
+    void printTrie(TrieNode* node, string prefix = "", int level = 0) {
+        if (node == nullptr) {
+            return;
+        }
+
+        for (int i = 0; i < level; i++) {
+            cout << "  ";
+        }
+
+        cout << "|--";
+        if (level > 0) {
+            cout << "[" << prefix[level - 1] << "]";
+        }
+        cout << endl;
+
+        for (int i = 0; i < 26; i++) {
+            if (node->child[i] != nullptr) {
+                char currentChar = 'a' + i;
+                string newPrefix = prefix + currentChar;
+                printTrie(node->child[i], newPrefix, level + 1);
+            }
+        }
     }
 };
 
