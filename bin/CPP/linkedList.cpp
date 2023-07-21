@@ -142,20 +142,28 @@ struct LinkedList {
 
     void reverse() {
         // Understand this concept
-        Node* newHead = nullptr;
+        Node* prev = nullptr;
+        Node* next = nullptr;
         Node* curr = head;
-        Node* next;
         while(curr != nullptr) {
-            next = curr->next;
-            curr->next = newHead; 
-            newHead = curr;
+            next = curr->next; 
+            curr->next = prev;
+            prev = curr;
             curr = next;
         }
-        head = newHead;
+        head = prev;
     }
 
-    void reverseRecusive() {
-        
+    void reverseRecusive(Node* node) {
+        if (node == nullptr) {
+            head = node;
+            return;
+        }
+        reverseRecusive(node->next);
+
+        Node* next = node->next;
+        next->next = node;
+        node->next = nullptr;
     }
 
     void print() {
@@ -169,6 +177,12 @@ struct LinkedList {
             curr = curr->next;
         }
         printf("\n");
+    }
+
+    void printRecusvive(Node* node) {
+        if(node == nullptr) return;
+        printf("| %d | >> ", node->data);        
+        printRecusvive(node->next);
     }
 };
 
@@ -188,7 +202,7 @@ int main() {
     ll->print();
     ll->reverseVisualize();
     printf("SETELAH REVERSE : \n");
-    ll->print();
+    ll->printRecusvive(ll->head);
 
     delete ll;
     return 0;

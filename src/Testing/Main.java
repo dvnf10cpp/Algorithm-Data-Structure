@@ -5,6 +5,7 @@ public class Main {
         testingOne();
     }
 
+
     static void testingOne() {
         LinkedList<Integer> sll = new LinkedList<>();
 

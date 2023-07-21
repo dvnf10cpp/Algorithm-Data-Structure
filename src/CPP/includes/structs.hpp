@@ -1,5 +1,5 @@
-#ifndef STRUCTS
-#define STRUCTS
+#ifndef STRUCTS_HPP
+#define STRUCTS_HPP
 
 #include <bits/stdc++.h>
 // for storing all data structures into one file
@@ -9,16 +9,17 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-struct Node {
-    Node* next; // 4 bytes size, its pointer
-    int data; // 4 bytes size
+class LinkedList {
+private:
+    struct Node {
+        Node* next; // 4 bytes size, its pointer
+        int data; // 4 bytes size
 
-    Node() : next(nullptr) {}
-    Node(int data) : data(data), next(nullptr) {}
-    Node(int data, Node* next) : data(data), next(next) {}
-};
-
-struct LinkedList {
+        Node() : next(nullptr) {}
+        Node(int data) : data(data), next(nullptr) {}
+        Node(int data, Node* next) : data(data), next(next) {}
+    };
+public:
     Node* head;
 
     LinkedList(): head(nullptr) {}
@@ -66,15 +67,20 @@ struct LinkedList {
     }
 
     void remove(int index) {
+        Node* tmp;
         if(index == 0) {
+            tmp = head;
             head = head->next;
+            delete tmp;
             return;
         }
         Node* curr = head;
         while(index-- > 1) {
             curr = curr->next;
         }
+        tmp = curr->next;
         curr->next = curr->next->next;
+        delete tmp;
     }
 
     int get(int index) {
@@ -134,6 +140,85 @@ struct LinkedList {
             curr = curr->next;
         }
         printf("\n");
+    }
+};
+
+class DoublyLinkedList {
+private:
+    struct Node {
+        int data;
+        Node* next;
+        Node* prev;
+
+        Node(int data) : 
+        data(data), 
+        next(nullptr), 
+        prev(nullptr) 
+        {}
+    };
+
+public:
+    Node* head;
+
+    DoublyLinkedList() : 
+    head(nullptr) {}
+
+    void prepend(int data) {
+        // insert at head
+        Node* newNode = new Node(data);
+        if(head == nullptr) {
+            head = newNode;
+            return;
+        }
+        head->prev = newNode;
+        newNode->next = head;
+        head = newNode;
+    }
+
+    void append(int data) {
+        // insert at tail
+        Node* newNode = new Node(data);
+        if(head == nullptr) {
+            head = newNode;
+            return;
+        }
+        Node* curr = head;
+        while(curr->next != nullptr) {
+            curr = curr->next;
+        }
+        curr->next = newNode;
+        newNode->prev = curr;
+    }
+
+    void print() {
+        Node* curr = head;
+        if(curr == nullptr) {
+            printf("NULL EMPTY\n");
+            return;
+        }
+        printf("NULL ");
+        while(curr != nullptr) {
+            printf("= | %d | ", curr->data);
+            curr = curr->next;
+        }
+        printf("= NULL\n");
+    }
+
+    void reversePrint() {
+        Node* curr = head;
+        if(curr == nullptr) {
+            printf("NULL EMPTY\n");
+            return;
+        }
+        while(curr->next != nullptr) {
+            curr = curr->next;
+        }
+        printf("NULL ");
+        while(curr != nullptr) {
+            printf("= | %d | ", curr->data);
+            curr = curr->prev;
+        }
+        printf("= NULL\n");
     }
 };
 

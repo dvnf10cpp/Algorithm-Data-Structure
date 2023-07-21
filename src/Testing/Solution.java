@@ -6,8 +6,7 @@ class Node {
 }
 
 class SLL {
-    Node head, tail;
-
+    Node head;
     
 }
 
