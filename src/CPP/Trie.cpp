@@ -26,7 +26,7 @@ public:
     }
 
     ~Trie() {
-        clear(root);
+        clear();
     }
 
     void insert(TrieNode* node, string word){
@@ -42,10 +42,12 @@ public:
     }
 
     void insert(string word) {
+        // Takes O(n) time, where n is the length of the word
         insert(root, word);
     }
 
     bool search(string word) {
+        // Takes O(n) time, where n is the length of the word
         TrieNode* node = root;
         int n = word.size();
         for(int i = 0; i < n; i++) {
@@ -60,6 +62,7 @@ public:
 
 
     bool startsWith(string prefix) {
+        // Takes O(n) time, where n is the length of the word
         TrieNode* node = root;
         int n = prefix.size();
         for(int i = 0; i < n; i++) {
@@ -72,7 +75,7 @@ public:
         return true;
     }
 
-    void clear(TrieNode* node) {
+    void clear(TrieNode* node = Trie::root) {
         for(int i = 0; i < 26; i++) {
             if(node->child[i] != nullptr) {
                 clear(node->child[i]);

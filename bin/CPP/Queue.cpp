@@ -2,6 +2,18 @@
 
 using namespace std;
 
+/**
+ * Queue as ADT
+ * Queue is a structure that whatever come in first come out first, or aka first in first out (FIFO)
+ * Insertion must happen on one end that we call tail
+ * Deletion must happen on other end that we call head
+ * Operations : 
+ *  1. Enqueue or Push, insert item at tail
+ *  2. Dequeue or Pop, remove item from head
+ *  3. Front or Peek, read item from head
+ * All those operations must take constant time, O(1)
+*/
+
 class Queue {
 private:
     struct Node {
@@ -15,24 +27,24 @@ private:
 public:
     Queue() : head(nullptr), tail(nullptr) {}
 
-    void push(int data) {
+    void enqueue(int data) {
         Node* node = new Node(data);
         if(empty()) {
             head = tail = node;
             return;
         }
-        tail-> next = node;
+        tail->next = node;
         tail = node;
     }
 
-    void pop() {
+    int dequeue() {
         if(empty())  return;
         Node* tmp = head;
         head = head->next;
         delete tmp;
     }
 
-    int peek() {
+    int front() {
         if(empty()) return INT_MIN;
         return head->data;
     }
@@ -45,13 +57,13 @@ public:
 int main() {
     Queue* q = new Queue();
 
-    q->push(5);
-    q->push(4);
-    q->push(3);
+    q->enqueue(5);
+    q->enqueue(4);
+    q->enqueue(3);
 
     while(!q->empty()) {
-        cout << q->peek() << " ";
-        q->pop();
+        cout << q->front() << " ";
+        q->dequeue();
     }
     cout << endl;
     return 0;
