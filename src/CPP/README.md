@@ -22,13 +22,28 @@ Contoh implementasi dari definisi ADT list pertama ini adalah array.
 Contoh implementasi dari definisi ADT list kedua ini adalah vector pada C++ atau ArrayList pada Java.
 Kita bisa mengimplementasikan arraylist buatan kita sendiri di C++ maupun Java.    
 
+### What is Linear Data Structure
+Struktur Data Linear merupakan struktur data dimana element data disimpan dalam urutan linear.   
+Contoh dari struktur data ini seperti array, linked list, stack, queue.
+
+### What is Non Linear Data Structure
+Struktur Data Non Linear merupakan struktur data dimana element data tidak disimpan dalam urutan linear, sehingga    
+untuk mengunjungi semua elemen, tidak bisa dilakukan dalam sekali jalan seperti array, linked list, queue dan stack.    
+Contoh dari struktur data ini seperti tree, graphs.
+
+### How to Decide Which Data Structure to Use ?
+1. Perhatikan apa yang akan disimpan pada struktur data. Sebuah struktur data bisa menjadi pilihan yang bagus untuk tipe  data tertentu.    
+2. Perhatikan waktu dan ruang kompleksitas yang diperlukan dalam operasi pada struktur data tersebut.   
+3. Perhatikan memory usagenya alias space complexity.
+
 ### Contents 
 1. [ArrayList in CPP](./ArrayList.cpp)        
 2. [LinkedList](./LinkedList.cpp)          
-3. [Prefix Tree](./Trie.cpp)
-4. [Double Linked List](./DoubleLinkedList.cpp)
-5. [Stack](./Stack.cpp)
-6. [Queue](./Queue.cpp)
-7. [Priority Queue](./PriorityQueue.cpp)
-10. [Program for Demo Struktur Data](./Program.cpp)
+3. [Double Linked List](./DoubleLinkedList.cpp)
+4. [Stack](./Stack.cpp)
+5. [Queue](./Queue.cpp)
+6. [Priority Queue](./PriorityQueue.cpp)
+7. [Tree](./Tree.cpp)
+8. [Binary Tree](./BinaryTree.cpp);
+9. [Prefix Tree](./Trie.cpp)
 

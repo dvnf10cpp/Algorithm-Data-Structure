@@ -12,6 +12,10 @@ Repo for learning Algorithm and Data Structure.
 6. [Freecodecamp Data Structure and Algorithm](https://www.youtube.com/watch?v=pkYVOmU3MgA) ``Python, Englsih``
 7. [Fasilkom Kuliah Struktur Data dan Algoritma](https://www.youtube.com/playlist?list=PLix5cpndzAbQ6tnx-gls_uv1HAIZK3Got) ``Playlist, Java, Indonesia``
 
+## Solving Problems
+1. [Hackerrank](https://www.hackerrank.com/domains/data-structures)        
+2. [Leetcode](https://neetcode.io/roadmap)
+
 ## Concepts
 
 1. [Pointer](./src/Pointer/README.md) (C/C++, Demo)   

@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 
-// Prefix Tree
-// Penjelasan lebih lengkapnya ada di PPT
+// Prefix Tree is another type of tree that usually stores a string in form of node
+// that has information about characters of the string we store in the tree
+// Look PPT folder for more information
 using namespace std;
 
 class TrieNode {
