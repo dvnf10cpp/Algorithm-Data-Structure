@@ -16,7 +16,7 @@ using namespace std;
  * In a valid tree that has n nodes, there will be exactly n-1 edges
  * Depth of x in tree can be defined as length of path from root to node x
  * Height of x in tree can be defined as number of edges in longest path from x to a leaf
- * Heigh of tree can be defined as heigh of root node
+ * Heigh of tree can be defined as heigh of root node, number of edges in the longest path from root to leaf
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  * Applications in tree : 
     1. Storing naturally hierarchical data, ex : filesystem

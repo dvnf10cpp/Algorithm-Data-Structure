@@ -44,6 +44,8 @@ Contoh dari struktur data ini seperti tree, graphs.
 5. [Queue](./Queue.cpp)
 6. [Priority Queue](./PriorityQueue.cpp)
 7. [Tree](./Tree.cpp)
-8. [Binary Tree](./BinaryTree.cpp);
+8. [Binary Tree](./BinaryTree.cpp)
 9. [Prefix Tree](./Trie.cpp)
+10. [Binary Search Tree](./BinarySearchTree.cpp)
+11. [Depth First and Breadth First Algorithm](./Algorithm.cpp)
 
