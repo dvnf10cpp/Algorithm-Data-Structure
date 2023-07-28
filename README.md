@@ -12,6 +12,17 @@ Repo for learning Algorithm and Data Structure.
 6. [Freecodecamp Data Structure and Algorithm](https://www.youtube.com/watch?v=pkYVOmU3MgA) ``Python, Englsih``
 7. [Fasilkom Kuliah Struktur Data dan Algoritma](https://www.youtube.com/playlist?list=PLix5cpndzAbQ6tnx-gls_uv1HAIZK3Got) ``Playlist, Java, Indonesia``
 
+## Other Resource Related 
+1. [Big O Notation](https://www.youtube.com/watch?v=Mo4vesaut8g) ```Concepts```
+2. [Recursion](https://www.youtube.com/watch?v=IJDJ0kBx2LM) ```Concepts```
+3. [Linked List](https://www.youtube.com/watch?v=Hj_rA0dhr2I) ```Concepts, Live Coding```
+4. [Graph Algorithm](https://www.youtube.com/watch?v=tWVWeAqZ0WU) ```Concepts, Live Coding```
+5. [Graph Theory](https://www.youtube.com/watch?v=09_LlHjoEiY) ```Concepts```
+6. [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk) ```Concepts, Live Coding```
+7. [Greedy Algorithm](https://www.youtube.com/watch?v=bC7o8P_Ste4) ```Concepts```
+8. [Complete Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O) ```Concepts```
+
+
 ## Solving Problems
 1. [Hackerrank](https://www.hackerrank.com/domains/data-structures)        
 2. [Leetcode](https://neetcode.io/roadmap)

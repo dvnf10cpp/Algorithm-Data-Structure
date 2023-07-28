@@ -48,4 +48,4 @@ Contoh dari struktur data ini seperti tree, graphs.
 9. [Prefix Tree](./Trie.cpp)
 10. [Binary Search Tree](./BinarySearchTree.cpp)
 11. [Depth First and Breadth First Algorithm](./Algorithm.cpp)
-
+12. [Graphs](./Graphs.cpp)
