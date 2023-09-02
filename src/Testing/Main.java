@@ -12,7 +12,7 @@ public class Main {
         sll.append(5);
         sll.append(10);
         sll.prepend(2);
-
+        // 4 3 5 10
         System.out.println(sll);
         System.out.println(sll.size());
 

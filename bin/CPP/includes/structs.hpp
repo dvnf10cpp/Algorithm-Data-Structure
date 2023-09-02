@@ -1,6 +1,4 @@
-#ifndef STRUCTS_HPP
-#define STRUCTS_HPP
-
+#pragma once
 #include <bits/stdc++.h>
 // for storing all data structures into one file
 
@@ -8,6 +6,7 @@ using std::string;
 using std::cin;
 using std::cout;
 using std::endl;
+using std::max;
 
 class LinkedList {
 private:
@@ -222,19 +221,21 @@ public:
     }
 };
 
-class TrieNode {
-public:
-    TrieNode* child[26];
-    bool end;
-    
-    TrieNode() {
-        for(auto &tn : child)
-            tn = nullptr;
-        end = 0;
-    }
-};
 
 class Trie {
+private:
+    class TrieNode {
+    public:
+        TrieNode* child[26];
+        bool end;
+        
+        TrieNode() {
+            for(auto &tn : child)
+                tn = nullptr;
+            end = 0;
+        }
+    };
+
 public:
     TrieNode* root;
     bool end;
@@ -336,5 +337,178 @@ public:
     }
 };
 
-#endif
+class BinarySearchTree {
+private:
+    struct Node {
+        int data;
+        Node* left;
+        Node* right;
+
+        Node(int data) : 
+        data(data), 
+        left(nullptr), 
+        right(nullptr) {}
+    };
+
+public:
+    Node* root;
+
+    BinarySearchTree() {
+        root = nullptr;
+    }
+
+    BinarySearchTree(int data) {
+        root = new Node(data);
+    }
+
+    void rInsert(int data) { // recursive insertion
+        // Time complexity : O(log n)
+        // Space complexity : O(log n), creates another node in memory to traverse recursively
+        // Call to another recursive function
+        if (root == nullptr) {
+            root = new Node(data);
+            return;
+        }
+
+        insert(root, data);
+    }
+
+    void iInsert(int data) { // iterative insertion
+        // Time complexity : O(log n)
+        // Space complexity : O(1), doesnt create another node in memory
+        if (root == nullptr) {
+            root = new Node(data);
+            return;
+        }
+
+        Node* curr = root;
+        while(1) {
+            if(data <= curr->data) {
+                if(curr->left == nullptr) {
+                    curr->left = new Node(data);
+                    return;
+                }
+                curr = curr->left;
+            } else {
+                if(curr->right == nullptr) {
+                    curr->right = new Node(data);
+                    return;
+                }
+                curr = curr->right;
+            }
+        }
+    }
+
+    bool rSearch(int data) { // recursive search
+        // Time complexity : O(log n)
+        // Space complexity : O(log n), creates another node in memory to traverse recursively
+        // Call to another recursive function
+        return search(root, data);
+    }
+
+    bool iSearch(int data) { // iterative search
+        // Time complexity : O(log n)
+        // Space complexity : O(1), doesnt create another
+
+        Node* curr = root;
+        while(1) {
+            if(curr == nullptr) return false;
+
+            if(data == curr->data) return true;
+
+            if(data < curr->data) curr = curr->left;
+            else curr = curr->right;
+        }
+    }
+
+    int maxElement() {
+        if(root == nullptr) return INT_MIN;
+
+        Node* curr = root;
+        while(curr->right != nullptr)
+            curr = curr->right;
+        return curr->data;
+    }
+
+    int minElement() {
+        if(root == nullptr) return INT_MAX;
+
+        Node* curr = root;
+        while(curr->left != nullptr)
+            curr = curr->left;
+        return curr->data;
+    }
+
+    int height() {
+        // Time complexity : O(n), whereas n = number of nodes in bst
+        return findHeight(root);
+    }
+
+    void print() {
+        cout << "=====================================\n";
+        cout << "|  VISUAL BST    |    root: " << root->data << endl;
+        cout << "-------------------------------------\n";
+        printTreeRecursive(root);
+        cout << "-------------------------------------\n";
+    }
+
+private:
+    void insert(Node* node, int data) {
+        if(data <= node->data) {
+            // basecase 1
+            if(node->left == nullptr) {
+                node->left = new Node(data);
+                return;
+            }
+            insert(node->left, data);
+        } else {
+            // basecase 2
+            if(node->right == nullptr) {
+                node->right = new Node(data);
+                return;
+            }
+            insert(node->right, data);
+        }
+    }
+
+    bool search(Node* node, int data) {
+        if(node == nullptr) {
+            return false;
+        }
+        
+        if(node->data == data) 
+            return true;
+          
+
+        if(data < node->data) 
+            return search(node->left, data);
+        else 
+            return search(node->right, data);
+        
+    }
+
+
+    void printTreeRecursive(Node* node, int depth = 0) {
+        if (node != nullptr) {
+            printTreeRecursive(node->right, depth + 1);
+
+            for (int i = 0; i < depth; ++i) {
+                std::cout << "    ";
+            }
+
+            std::cout << node->data << std::endl;
+
+            printTreeRecursive(node->left, depth + 1);
+        }
+    }
+
+    int findHeight(Node* node) {
+        if(node==nullptr) return 0;
+
+        int left = findHeight(node->left);
+        int right = findHeight(node->right);
+
+        return max(left, right) + 1;
+    }
+};
 

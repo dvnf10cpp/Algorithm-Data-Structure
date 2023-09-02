@@ -2,7 +2,7 @@
 
 /*
  * Unlike Single Linked List, In Doubly Linked List,
- * each node has reference to the next node or previous node
+ * each node has reference to the next node and previous node
 */
 using namespace std;
 

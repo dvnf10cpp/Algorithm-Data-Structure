@@ -2,7 +2,7 @@
 
 using namespace std;
 /*
-Linked list is a data structure that stores a data and and a pointer/reference to the next data (Node)
+ * Linked list is a data structure that stores a data and and a pointer or reference to the next data 
 */
 
 struct Node {

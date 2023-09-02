@@ -155,3 +155,4 @@ public class LinkedList<Type>{
         return res;
     }
 }
+

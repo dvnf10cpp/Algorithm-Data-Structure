@@ -2,6 +2,11 @@
 
 using namespace std;
 
+/**
+ * Priority Queue is a type of queue that aranges elements based on their priority values.
+ * Element with higher priority values are typically retrieved before elements with lower values
+ * In this one, we are implementing descending type of priority queue
+*/
 class PriorityQueue {
 private:
     struct Node {
@@ -15,6 +20,7 @@ public:
     PriorityQueue() : head(nullptr) {}
 
     void push(int data) {
+        // Takes O(n) time, where n is the size of the data structure
         Node* node = new Node(data);
         if(empty()) {
             head = node;
@@ -38,6 +44,7 @@ public:
     }
 
     void pop() {
+        // Takes O(1) time
         Node* tmp = head;
         head = head->next;
         delete tmp;

@@ -14,6 +14,7 @@ using namespace std;
  * All those operations must take constant time, O(1)
 */
 
+/// @brief queue implementation using linked list
 class Queue {
 private:
     struct Node {
@@ -38,7 +39,7 @@ public:
     }
 
     int dequeue() {
-        if(empty())  return;
+        if(empty())  return INT_MIN;
         Node* tmp = head;
         head = head->next;
         delete tmp;

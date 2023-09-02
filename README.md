@@ -21,6 +21,7 @@ Repo for learning Algorithm and Data Structure.
 6. [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk) ```Concepts, Live Coding```
 7. [Greedy Algorithm](https://www.youtube.com/watch?v=bC7o8P_Ste4) ```Concepts```
 8. [Complete Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O) ```Concepts```
+9. [Pemrograman Kompetitif](https://osn.toki.id/data/pemrograman-kompetitif-dasar.pdf) ```EBook, Concepts```
 
 
 ## Solving Problems
