@@ -4,3 +4,5 @@ vscode
 Code
 __pycache__
 *.pptx
+/bin
+.VSCodeCounter
