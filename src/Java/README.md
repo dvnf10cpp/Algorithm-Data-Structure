@@ -1,6 +1,9 @@
 ## Catatan Kuliah
 
-### Definisi
+## Materi
+1. [LinkedList](#definisi-linkedlist)
+
+### Definisi LinkedList
 Linked List adalah salah satu bentuk implementasi ADT List.
 Linked List merupakan struktur data yang dibangun dari satu atau lebih node yang menemapti alokasi memori secara dinamis.   
 Node merupakan tempat penyimpanan data yang terdiri dari dua field
@@ -21,14 +24,4 @@ Perbedaan array dan linked list :
 2. Pada Array, penambahan / penghapusan data terbatas, sedangkan linked list tidak terbatas
 3. Pada Array, diakses secara random sesuai keinginan, sedangkan linked list diakses secara sekuensial
 
-Dalam Java, berikut kodenya : 
-```
-class Node {
-    int data;
-    Node next;
-}
-
-class LinkedList {
-    Node head
-}
-```
+Implementasi : [LinkedList](./my/datastructure/LinkedList.java)
